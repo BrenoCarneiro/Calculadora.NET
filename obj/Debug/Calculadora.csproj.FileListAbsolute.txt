@@ -1,0 +1,14 @@
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\bin\Debug\pt-BR\Calculadora.resources.dll
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.SuggestedBindingRedirects.cache
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.Calculadora.resources
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.Calculadora.pt-BR.resources
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\pt-BR\Calculadora.resources.dll
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+D:\Users\breno\Workspace\Estudos\Csharp\Calculadora\Calculadora\obj\Debug\Calculadora.pdb

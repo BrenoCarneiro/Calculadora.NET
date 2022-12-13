@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>259, 311</value>
+  </data>
+  <data name="botaoMais.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 253</value>
+  </data>
+  <data name="&gt;&gt;botaoZero.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelOperacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoOito.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarMemoria.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;botaoDivisao.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="botaoPorcentagem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 109</value>
+  </data>
+  <data name="&gt;&gt;botaoMais.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="telaResultado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 36</value>
+  </data>
+  <data name="botaoUm.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="botaoPorcentagem.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;botaoSete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoOito.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="botaoUm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 205</value>
+  </data>
+  <data name="&gt;&gt;botaoDivisao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoZero.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="botaoMultiplicacao.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="botaoDois.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 205</value>
+  </data>
+  <data name="&gt;&gt;botaoAlterarSinal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;telaResultado.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;botaoUm.Name" xml:space="preserve">
+    <value>botaoUm</value>
+  </data>
+  <data name="botaoApagarDigito.Text" xml:space="preserve">
+    <value>&lt;-</value>
+  </data>
+  <data name="&gt;&gt;botaoAlterarSinal.Name" xml:space="preserve">
+    <value>botaoAlterarSinal</value>
+  </data>
+  <data name="botaoUm.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarMemoria.Name" xml:space="preserve">
+    <value>botaoApagarMemoria</value>
+  </data>
+  <data name="&gt;&gt;botaoSeis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoPorcentagem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;botaoRaizQuadrada.Name" xml:space="preserve">
+    <value>botaoRaizQuadrada</value>
+  </data>
+  <data name="&gt;&gt;botaoDois.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoSete.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoTres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoApagarVisor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoZero.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 253</value>
+  </data>
+  <data name="labelOperacao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;botaoCinco.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="telaResultado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 18pt</value>
+  </data>
+  <data name="telaResultado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 12</value>
+  </data>
+  <data name="botaoApagarMemoria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoIgual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 205</value>
+  </data>
+  <data name="&gt;&gt;botaoFracao.Name" xml:space="preserve">
+    <value>botaoFracao</value>
+  </data>
+  <data name="botaoFracao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoUm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoOito.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="botaoCinco.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="labelOperacao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 14.25pt</value>
+  </data>
+  <data name="botaoFracao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 157</value>
+  </data>
+  <data name="&gt;&gt;telaResultado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoUm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoDecimal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoApagarDigito.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="botaoSete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 109</value>
+  </data>
+  <data name="botaoDivisao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoDecimal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoMais.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Calculadora</value>
+  </data>
+  <data name="botaoUm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoTres.Name" xml:space="preserve">
+    <value>botaoTres</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarMemoria.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoApagarMemoria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 61</value>
+  </data>
+  <data name="botaoSeis.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="botaoQuatro.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="botaoApagarMemoria.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="botaoPorcentagem.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="botaoCinco.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 157</value>
+  </data>
+  <data name="telaResultado.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;botaoTres.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="botaoMenos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 205</value>
+  </data>
+  <data name="botaoTres.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="botaoRaizQuadrada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 9pt</value>
+  </data>
+  <data name="botaoQuatro.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;botaoRaizQuadrada.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;botaoFracao.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="botaoDecimal.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;botaoDecimal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoMais.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;botaoUm.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;botaoSete.Name" xml:space="preserve">
+    <value>botaoSete</value>
+  </data>
+  <data name="&gt;&gt;botaoIgual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoDois.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="labelOperacao.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="botaoMenos.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarDigito.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="botaoAlterarSinal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;botaoDois.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoOito.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoSeis.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;botaoIgual.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoMenos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Calculadora .NET</value>
+  </data>
+  <data name="botaoSete.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;botaoPorcentagem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoMultiplicacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarMemoria.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarVisor.Name" xml:space="preserve">
+    <value>botaoApagarVisor</value>
+  </data>
+  <data name="botaoDecimal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 253</value>
+  </data>
+  <data name="botaoNove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 109</value>
+  </data>
+  <data name="&gt;&gt;labelOperacao.Name" xml:space="preserve">
+    <value>labelOperacao</value>
+  </data>
+  <data name="&gt;&gt;botaoCinco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoMenos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoApagarVisor.Text" xml:space="preserve">
+    <value>CE</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;botaoIgual.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="botaoSete.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;botaoCinco.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoPorcentagem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoCinco.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="botaoMultiplicacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 157</value>
+  </data>
+  <data name="botaoFracao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 9pt</value>
+  </data>
+  <data name="labelOperacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="botaoFracao.Text" xml:space="preserve">
+    <value>1/x</value>
+  </data>
+  <data name="&gt;&gt;botaoDivisao.Name" xml:space="preserve">
+    <value>botaoDivisao</value>
+  </data>
+  <data name="&gt;&gt;botaoTres.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoNove.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="botaoApagarMemoria.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="botaoOito.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 109</value>
+  </data>
+  <data name="botaoQuatro.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="botaoDivisao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoMultiplicacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoMenos.Name" xml:space="preserve">
+    <value>botaoMenos</value>
+  </data>
+  <data name="botaoQuatro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoNove.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;botaoSeis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoDecimal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 9pt</value>
+  </data>
+  <data name="&gt;&gt;botaoAlterarSinal.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="labelOperacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 19</value>
+  </data>
+  <data name="botaoAlterarSinal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoSeis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoNove.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="botaoQuatro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 157</value>
+  </data>
+  <data name="&gt;&gt;botaoOito.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoRaizQuadrada.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoIgual.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;botaoAlterarSinal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoOito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoTres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 205</value>
+  </data>
+  <data name="botaoTres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoMais.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;botaoMais.Name" xml:space="preserve">
+    <value>botaoMais</value>
+  </data>
+  <data name="botaoApagarVisor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;botaoDecimal.Name" xml:space="preserve">
+    <value>botaoDecimal</value>
+  </data>
+  <data name="botaoOito.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoMultiplicacao.Name" xml:space="preserve">
+    <value>botaoMultiplicacao</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarVisor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoDivisao.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="&gt;&gt;botaoSete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoZero.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoQuatro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoMenos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelOperacao.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="botaoMultiplicacao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarVisor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoApagarDigito.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoSeis.Name" xml:space="preserve">
+    <value>botaoSeis</value>
+  </data>
+  <data name="botaoMenos.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="botaoFracao.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;botaoQuatro.Name" xml:space="preserve">
+    <value>botaoQuatro</value>
+  </data>
+  <data name="botaoMenos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;labelOperacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoOito.Name" xml:space="preserve">
+    <value>botaoOito</value>
+  </data>
+  <data name="botaoNove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoMenos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="botaoMais.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="telaResultado.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;botaoMultiplicacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoCinco.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="&gt;&gt;botaoDivisao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoCinco.Name" xml:space="preserve">
+    <value>botaoCinco</value>
+  </data>
+  <data name="botaoAlterarSinal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 61</value>
+  </data>
+  <data name="&gt;&gt;botaoNove.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarDigito.Name" xml:space="preserve">
+    <value>botaoApagarDigito</value>
+  </data>
+  <data name="&gt;&gt;telaResultado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoSeis.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;botaoQuatro.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarDigito.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoPorcentagem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoIgual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 15.75pt</value>
+  </data>
+  <data name="botaoZero.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="botaoApagarDigito.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoApagarVisor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 61</value>
+  </data>
+  <data name="botaoSete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoDecimal.Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="&gt;&gt;botaoNove.Name" xml:space="preserve">
+    <value>botaoNove</value>
+  </data>
+  <data name="botaoRaizQuadrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
+  </data>
+  <data name="botaoMais.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 9pt</value>
+  </data>
+  <data name="botaoDivisao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 109</value>
+  </data>
+  <data name="&gt;&gt;botaoPorcentagem.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;botaoQuatro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoSeis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 157</value>
+  </data>
+  <data name="botaoDois.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="botaoDois.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;botaoDois.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarDigito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoCinco.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;botaoFracao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoZero.Name" xml:space="preserve">
+    <value>botaoZero</value>
+  </data>
+  <data name="botaoAlterarSinal.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;botaoIgual.Name" xml:space="preserve">
+    <value>botaoIgual</value>
+  </data>
+  <data name="&gt;&gt;telaResultado.Name" xml:space="preserve">
+    <value>telaResultado</value>
+  </data>
+  <data name="botaoNove.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoFracao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botaoZero.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="botaoIgual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 90</value>
+  </data>
+  <data name="&gt;&gt;botaoUm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botaoApagarVisor.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="botaoApagarMemoria.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="botaoSeis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="botaoIgual.Text" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="botaoAlterarSinal.Text" xml:space="preserve">
+    <value>±</value>
+  </data>
+  <data name="&gt;&gt;botaoNove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoRaizQuadrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 61</value>
+  </data>
+  <data name="&gt;&gt;botaoSete.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="botaoApagarVisor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="botaoMultiplicacao.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;botaoDois.Name" xml:space="preserve">
+    <value>botaoDois</value>
+  </data>
+  <data name="&gt;&gt;botaoMais.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botaoRaizQuadrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botaoDivisao.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="botaoZero.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="botaoTres.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="&gt;&gt;botaoMultiplicacao.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="botaoZero.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 42</value>
+  </data>
+  <data name="botaoRaizQuadrada.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="botaoDois.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="botaoApagarDigito.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 61</value>
+  </data>
+  <data name="&gt;&gt;botaoPorcentagem.Name" xml:space="preserve">
+    <value>botaoPorcentagem</value>
+  </data>
+  <data name="&gt;&gt;botaoDecimal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="botaoRaizQuadrada.Text" xml:space="preserve">
+    <value>√</value>
+  </data>
+  <data name="botaoTres.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>pt-BR</value>
+  </metadata>
+</root>

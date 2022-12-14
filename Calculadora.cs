@@ -14,8 +14,9 @@ namespace Calculadora
 {
     public partial class Calculadora : Form
     {
-        decimal valor1 = 0, valor2 = 0;
+        double valor1 = 0, valor2 = 0;
         string operacao = "";
+        string[] entradaProibida = new string[] { "NaN", "Entrada inválida", "Infinity" };
         public Calculadora()
         {
             InitializeComponent();
@@ -28,14 +29,14 @@ namespace Calculadora
 
         private void botaoFracao_Click(object sender, EventArgs e)
         {
-            if (telaResultado.Text != "")
-            {
-                valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-                telaResultado.Text = (1 / (valor1)).ToString(CultureInfo.InvariantCulture);
-            }
-            else
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
             {
                 telaResultado.Text = "";
+            }
+            else if (telaResultado.Text != "")
+            {
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = (1 / (valor1)).ToString(CultureInfo.InvariantCulture);
             }
         }
 
@@ -46,7 +47,11 @@ namespace Calculadora
 
         private void botaoDecimal_Click(object sender, EventArgs e)
         {
-            if (!telaResultado.Text.Contains("."))
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
+            }
+            else if(!telaResultado.Text.Contains("."))
             {
                 telaResultado.Text += ".";
             }
@@ -100,34 +105,47 @@ namespace Calculadora
 
         private void botaoApagarDigito_Click(object sender, EventArgs e)
         {
-            if (telaResultado.Text != "") { 
-            telaResultado.Text = telaResultado.Text.Remove(telaResultado.Text.Length -1);
-            }
-            else
-            {
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains)) {
                 telaResultado.Text = "";
+                
+            }
+            else if(telaResultado.Text != "")
+            {
+                telaResultado.Text = telaResultado.Text.Remove(telaResultado.Text.Length - 1);
             }
         }
 
         private void botaoIgual_Click(object sender, EventArgs e)
         {
-            valor2 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            if(operacao == "SOMA")
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
             {
-                telaResultado.Text = (valor1 + valor2).ToString(CultureInfo.InvariantCulture);
+                telaResultado.Text = "";
             }
-            if (operacao == "SUBTRAÇÃO")
+            else if (telaResultado.Text != "")
             {
-                telaResultado.Text = (valor1 - valor2).ToString(CultureInfo.InvariantCulture);
+                valor2 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                if (operacao == "SOMA")
+                {
+                    telaResultado.Text = (valor1 + valor2).ToString(CultureInfo.InvariantCulture);
+                    labelOperacao.Text = "";
+                }
+                if (operacao == "SUBTRAÇÃO")
+                {
+                    telaResultado.Text = (valor1 - valor2).ToString(CultureInfo.InvariantCulture);
+                    labelOperacao.Text = "";
+                }
+                if (operacao == "MULTIPLICAÇÃO")
+                {
+                    telaResultado.Text = (valor1 * valor2).ToString(CultureInfo.InvariantCulture);
+                    labelOperacao.Text = "";
+                }
+                if (operacao == "DIVISÃO")
+                {
+                    telaResultado.Text = (valor1 / valor2).ToString(CultureInfo.InvariantCulture);
+                    labelOperacao.Text = "";
+                }
             }
-            if (operacao == "MULTIPLICAÇÃO")
-            {
-                telaResultado.Text = (valor1 * valor2).ToString(CultureInfo.InvariantCulture);
-            }
-            if (operacao == "DIVISÃO")
-            {
-                telaResultado.Text = (valor1 / valor2).ToString(CultureInfo.InvariantCulture);
-            }
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -137,51 +155,102 @@ namespace Calculadora
 
         private void telaResultado_TextChanged(object sender, EventArgs e)
         {
-            if (telaResultado.TextLength > 16)
+            if (telaResultado.TextLength >= 20)
             {
-                telaResultado.Text = telaResultado.Text.Substring(0, 16);
+                labelOperacao.Text = "";
+            }
+            else if (telaResultado.TextLength > 16)
+            {
+                telaResultado.Text = (telaResultado.Text.Substring(0, 16));
+
             }
         }
-
-        private void botaoMenos_Click(object sender, EventArgs e)
+            private void botaoMenos_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            telaResultado.Text = "";
-            operacao = "SUBTRAÇÃO";
-            labelOperacao.Text = "-";
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
+            }
+            else if (telaResultado.Text != "")
+            {
+                
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = "";
+                operacao = "SUBTRAÇÃO";
+                labelOperacao.Text = "-";
+            }
+            
         }
 
         private void botaoMultiplicacao_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            telaResultado.Text = "";
-            operacao = "MULTIPLICAÇÃO";
-            labelOperacao.Text = "*";
+
+            if (telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
+            }
+            else if (telaResultado.Text != "")
+            {
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = "";
+                operacao = "MULTIPLICAÇÃO";
+                labelOperacao.Text = "*";
+            }
         }
 
         private void botaoDivisao_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            telaResultado.Text = "";
-            operacao = "DIVISÃO";
-            labelOperacao.Text = "/";
+            if(telaResultado.Text == "" || entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
+            }
+            else if (telaResultado.Text != "")
+            {
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = "";
+                operacao = "DIVISÃO";
+                labelOperacao.Text = "/";
+            }
+                
         }
 
         private void botaoRaizQuadrada_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            telaResultado.Text = (Convert.ToSingle(Math.Sqrt((double)valor1))).ToString(CultureInfo.InvariantCulture);
+            if (entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "Entrada inválida";
+                labelOperacao.Text = "";
+            }
+            else if(telaResultado.Text != "")
+            {
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = (Convert.ToSingle(Math.Sqrt((double)valor1))).ToString(CultureInfo.InvariantCulture);
+            }
+           
   
         }
 
         private void botaoPorcentagem_Click(object sender, EventArgs e)
         {
-            valor2 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            if (valor1.ToString() != "0")
+            if (entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
             {
-                telaResultado.Text = ((valor2 * valor1)/100).ToString(CultureInfo.InvariantCulture);
-                labelOperacao.Text = "%";
+                telaResultado.Text = "Entrada inválida";
+                labelOperacao.Text = "";
             }
+            else if (telaResultado.Text != "")
+            {
+                valor2 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                if (valor1.ToString() != "0")
+                {
+                    telaResultado.Text = ((valor2 * valor1) / 100).ToString(CultureInfo.InvariantCulture);
+                    labelOperacao.Text = "%";
+                }
+                else
+                {
+                    telaResultado.Text = ("Entrada inválida");
+                }
+            }
+           
         }
 
         private void botaoApagarMemoria_Click(object sender, EventArgs e)
@@ -193,21 +262,37 @@ namespace Calculadora
 
         private void botaoAlterarSinal_Click(object sender, EventArgs e)
         {
-            if (telaResultado.Text.StartsWith("-")){
-                telaResultado.Text = telaResultado.Text.Remove(0, 1);
+            if (entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
             }
             else
             {
-                telaResultado.Text = ("-" + telaResultado.Text);
+                if (telaResultado.Text.StartsWith("-"))
+                {
+                    telaResultado.Text = telaResultado.Text.Remove(0, 1);
+                }
+                else
+                {
+                    telaResultado.Text = ("-" + telaResultado.Text);
+                }
             }
+            
         }
 
         private void botaoMais_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
-            telaResultado.Text = "";
-            operacao = "SOMA";
-            labelOperacao.Text = "+";
+            if (entradaProibida.Any(telaResultado.Text.Contains) || telaResultado.Text == "," || telaResultado.Text == "-" || telaResultado.Text == ".")
+            {
+                telaResultado.Text = "";
+            }
+            else if (telaResultado.Text != "")
+            {
+                valor1 = double.Parse(telaResultado.Text, CultureInfo.InvariantCulture);
+                telaResultado.Text = "";
+                operacao = "SOMA";
+                labelOperacao.Text = "+";
+            }
         }
     }
 }
